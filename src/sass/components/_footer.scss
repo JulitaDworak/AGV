@@ -1,0 +1,169 @@
+.footer {
+  background-color: $sea-salt-sherbet;
+  font-family: $ff-alt, sans-serif;
+  font-size: $fs-alt;
+  flex-wrap: wrap;
+  justify-content: center;
+  display: flex;
+
+  &__container {
+    max-width: 480px;
+    margin: 0 auto;
+    width: calc(100% - 100px);
+  }
+
+  &__all {
+    display: block;
+    margin-bottom: 43px;
+  }
+
+  &__left-side {
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  &__paragraf {
+    width: 232px;
+    height: 42px;
+    color: $amelies-tutu;
+    margin: 0px;
+    font-size: $fs-h2-mob;
+    margin-bottom: 17px;
+  }
+
+  &__head {
+    width: 200px;
+    font-size: $fs-h3-mob;
+    color: $blueberry-lemonade;
+    margin: 0px;
+  }
+
+  &__right-side {
+    margin-top: 43px;
+  }
+
+  &__phone {
+    font-size: 1.2rem;
+    margin: 0px;
+    margin-top: 46px;
+    text-align: right;
+    font-weight: 700;
+    font-family: $ff-base, sans-serif;
+  }
+
+  &__phone-link {
+    color: $blueberry-lemonade;
+    text-decoration: none;
+  }
+
+  &__rights {
+    justify-content: center;
+    display: flex;
+    border-top: 1px solid #e1e1e1;
+    width: 100%;
+  }
+
+  &__rights-item {
+    color: $gypsy-magic;
+    text-align: center;
+    font-size: 1.4rem;
+    width: 150px;
+    font-weight: 700;
+    font-family: $ff-base, sans-serif;
+    padding: 22px 0px 25px 0px;
+  }
+}
+
+.social-list {
+  display: flex;
+  justify-content: right;
+  gap: 28px;
+
+  &__icon {
+    cursor: pointer;
+    fill: $white;
+    background-color: $amelies-tutu;
+    padding: 6.5px;
+    border-radius: 50px;
+    width: 32px;
+    height: 32px;
+
+    &:hover {
+      background-color: $blueberry-lemonade;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    display: flex;
+
+    &__container {
+      max-width: 768px;
+      margin: 0 auto;
+    }
+
+    &__all {
+      display: flex;
+      place-content: space-between;
+    }
+
+    &__head {
+      width: 340px;
+      font-size: $fs-h3-tab;
+    }
+
+    &__right-side {
+      margin-top: 0px;
+    }
+    &__phone {
+      width: 268px;
+    }
+
+    &__paragraf {
+      width: 340px;
+      height: 57px;
+      font-size: $fs-h2-tab;
+    }
+    &__rights-item {
+      width: 276px;
+      padding: 29px 0px 18px 0px;
+    }
+  }
+  .social-list {
+    justify-content: right;
+    width: auto;
+
+    &__icon {
+      width: 34px;
+      height: 34px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    &__container {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    &__paragraf {
+      width: 472px;
+    }
+
+    &__head {
+      width: 474px;
+      font-size: $fs-h3-desk;
+    }
+
+    &__phone {
+      width: 319px;
+      font-size: $fs-alt;
+    }
+
+    &__rights-item {
+      padding: 9px 0px 10px 0px;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.overlay-contacts {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  visibility: visible;
+
+  transform: scale(1);
+  transition: transform 0.5s ease-in-out;
+}
+
+.modal-contacts {
+  position: relative;
+  width: 60%;
+  height: 60%;
+  display: grid;
+  place-items: center;
+  background: $blueberry-lemonade;
+  border-radius: 20px;
+  z-index: 1000000000000;
+
+  &__button {
+    display: block;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+  }
+}
+
+@media (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+  .modal-contacts {
+    background-image: url(/src/images/contacts/contactsbg.png);
+  }
+}
